@@ -7,7 +7,7 @@
 | 项目 | 项目状态 | 能力状态 |
 | --- | --- | --- |
 | [cpp-thread-pool](https://github.com/Zhihui-Cui/cpp-thread-pool) | v0 已交付，原 #1–#7 已关闭 | 核心机制独立验收中 |
-| concurrent-tcp-server | 待创建；W6–W7 两周练习 | 待学习 |
+| [concurrent-tcp-server](https://github.com/Zhihui-Cui/concurrent-tcp-server) | 已初始化说明与 4 个 Issue；W6–W7 两周练习 | 待学习 |
 | llm-inference-lab（建议名） | W8 起的持续主项目，届时创建 | 训练循环 → 模型/KV → GPU → serving |
 
 模型、算子和推理服务放入一个持续主项目，不再分别创建 mini-transformer、cuda-kernels、mini-vllm 等教程仓库。
