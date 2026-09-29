@@ -1,33 +1,32 @@
-# 当前唯一目标：ThreadPool 核心机制独立验收
+# 当前：接回最小线程池的结果与异常
 
-更新：2026-09-24，W3 剩余时间。依据个人时间线新版计划，替代之前“半天巩固后立即做 TCP”的排期。
+2026-09-29，W4（9/27～10/3）。依据最新规划更新；不重新执行已经勾选的练习。
 
-## 状态
+## 远程已看到的进度
 
-- 项目：v0 已交付，原 #1–#7 已完成。
-- 验证：9/24 独立 Debug 构建和 CTest 3/3 通过，Release benchmark 校验通过。
-- 能力：等待、任务包装、结果和关闭流程仍待独立验收。
-- 当前任务：[Issue #8](https://github.com/Zhihui-Cui/cpp-thread-pool/issues/8)。
+[线程池 #8](https://github.com/Zhihui-Cui/cpp-thread-pool/issues/8) 已勾选：时序图、三个小练习、最小池实现、提示与错误记录。这是本人记录的状态；main 仍为原 v0，尚未看到这些独立练习的代码或运行证据。
 
-## 本周三个子任务
+## 今天只做这一项
 
-- [ ] 不看源码画 submit 到 future 的时序，标注执行线程、对象所有权、锁范围。
-- [ ] 独立写条件变量等待/唤醒小练习，解释等待谓词和关闭通知。
-- [ ] 独立写延迟执行及 packaged_task/future 小练习，覆盖返回值、void 和异常。
+在你已写出的最小池中接回 packaged_task/future：
 
-允许查 API 文档；记录自己完成和需要提示的部分。今天先画时序，遇到不清楚的环节标问号，再用小练习验证。
+1. 先实现并运行返回 42 的任务。
+2. 再覆盖 void、任务抛异常、异常经 get 取回、随后任务仍能执行。
+3. 用自己的话解释 get 与 join 的区别；保存练习与测试命令/实际结果，提交后关联 #8。
 
-## W4（9/27～10/3）
+不要求通用参数包或完美转发。先自己写，卡住时请求一个提示。原“3–7 天变体”转为后续可选复测，不阻塞 #8 关闭与进入模型阶段。测试未做就不勾选。
 
-从空文件独立写只保存 std::function<void()> 的最小池，再接回结果与异常；建立 Linux 环境。原实现保留，练习使用独立目录。间隔 3–7 天复做一个变体。独立巩固约 15–25 小时，按实际进度调整。
+## 10 月上旬收尾
 
-## W5（10/4～10/10）
+- 完成 [#9 Linux 构建和一次调试](https://github.com/Zhihui-Cui/cpp-thread-pool/issues/9)。
+- 原多生产者压力测试、竞态检测与 [#10 benchmark 补强](https://github.com/Zhihui-Cui/cpp-thread-pool/issues/10) 留作后续可选，不继续扩张线程池。
 
-[Linux 与多生产者验证 #9](https://github.com/Zhihui-Cui/cpp-thread-pool/issues/9)；
-[串行基线与任务粒度 #10](https://github.com/Zhihui-Cui/cpp-thread-pool/issues/10)。
+## 随后
 
-## 之后
+网络练习总计 6–10h，只完成 [最小请求路径](https://github.com/Zhihui-Cui/concurrent-tcp-server/issues/1)。原两周网络项目取消，不要求线程池接入、复杂并发或 p99 压测。
 
-W6–W7（10/11～10/24）限时完成 Linux 并发任务服务；W8（10/25）进入 Python/PyTorch。详细验收见 [roadmap.md](roadmap.md)。
+10 月中旬进入 [独立训练/验证/保存加载](https://github.com/Zhihui-Cui/ai-infra-roadmap/issues/1)，到 11 月上旬形成独立训练能力；无需等待扩展系统任务完成。
 
-每周约 30 小时预算：实现/实验 14h、理论 6h、算法 4h、复盘 2h、缓冲/复测 4h。考试周缩小任务，不跳过前置验收。
+## 每周 30 小时
+
+主项目12h、数学/ML6h、文献/实验设计4h、算法4h、C++/Linux2h、复盘/交流/投递准备2h。当前到 10 月上旬的线程池/Linux 收尾可占用主项目时间；进入模型阶段后系统巩固保持2h。训练基础未过时，部分文献时间改为训练实践。
