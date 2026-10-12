@@ -1,29 +1,32 @@
-# 模型效率与 AI Systems 学习总控
+# AI Systems 学习总控
 
-更新：2026-09-29。当前暂定主攻模型推理优化、效率算法及相关系统工程，保留应用算法的选择权。重点是独立实现、可信实验与可说明的贡献；年底根据项目和外部反馈调整。
+执行版本：2026-10-12，依据本人 2026-10-01 整合规划。W1 从 2026-09-06 起算，当前 W6（10/11–10/17）。
 
-本页与 roadmap/now 按 9 月 29 日新规划执行，替代 9 月 23–24 日旧排期。个人职业比较与学校信息保留本地，不上传原文。
+主线：独立训练 → 模型机制 → 可靠单卡评测 → 一个有证据的深入问题。个人时间线原文保留本地，此处只发布技术执行摘要。
 
-## 项目状态与能力状态
+## 现在做什么
 
-| 项目 | 交付状态 | 当前动作 |
-| --- | --- | --- |
-| [cpp-thread-pool](https://github.com/Zhihui-Cui/cpp-thread-pool) | v0 已完成；main 仍为 4f2279c | #8 已勾选四项，完成结果/异常接回并补证据；#9 Linux 构建调试 |
-| [concurrent-tcp-server](https://github.com/Zhihui-Cui/concurrent-tcp-server) | 只有说明，无实现 | 缩为总计 6–10h，只执行 #1；#2–#4 暂不安排 |
-| llm-inference-lab（建议名） | 主项目待启动，未在本次建立仓库 | 10 月中旬开始独立训练 → Transformer/KV → 效率实验 |
+先看 [本周任务](now.md)，再推进 [独立训练总任务 #1](https://github.com/Zhihui-Cui/ai-infra-roadmap/issues/1)。本周只交付一个能解释的最小训练，不等待 TCP 扩展。
 
-#8 的勾选为本人报告；独立练习尚未出现在远程 main，也无 Issue 评论证据，不视为本次实测通过。原 v0 的 9/24 构建证据继续保留。
+## 仓库分工
 
-## 任务入口
+| 仓库 | 用途 | 当前证据与安排 |
+|---|---|---|
+| [cpp-thread-pool](https://github.com/Zhihui-Cui/cpp-thread-pool) | C++ 并发基础 P0 | #8、#9 已关闭；已有有界队列和 Linux 串行基线记录。冻结功能，每周少量巩固 |
+| [concurrent-tcp-server](https://github.com/Zhihui-Cui/concurrent-tcp-server) | 6–10h 请求路径练习 P1 | 已有单连接、单请求 echo；#1 尚开，补测及耗时记录未齐。不是已实现并发服务 |
+| llm-inference-lab（待创建） | 持续主项目 P2 | 训练、Transformer、GPU 小实验、单卡推理评测与一个深度专题放同一仓库 |
+| 本仓库 | 计划、状态、周复盘与跨项目入口 | 不放大模型权重，不堆放课程完整笔记 |
 
-- [当前该做什么](now.md)
-- [新路线与时间预算](roadmap.md)
-- [线程池 #8：核心收尾](https://github.com/Zhihui-Cui/cpp-thread-pool/issues/8)
-- [线程池 #9：Linux 构建与调试](https://github.com/Zhihui-Cui/cpp-thread-pool/issues/9)
-- [网络最小练习](plans/concurrent-tcp-server.md)
-- [下一主任务：独立训练与验证](https://github.com/Zhihui-Cui/ai-infra-roadmap/issues/1)
+暂不新建 Mini-vLLM、CUDA 大全集、量化论文或 FPGA 项目。未来出现独立使用者、独立发布需求和稳定边界时再拆仓。
 
-## 管理原则
+## 导航
 
-项目完成、运行证据和独立能力分别记录。每次只推进当前一个小步骤，AI 先给提示再审查；已完成任务不重做。
-历史 [复盘](weekly-reviews) 保留当时语境，其中旧未来排期以现行 roadmap/now 为准。
+- [阶段路线与门槛](roadmap.md)
+- [主项目结构、周计划及验收](plans/llm-inference-lab.md)
+- [TCP 限时练习](plans/concurrent-tcp-server.md)
+- [每周复盘](weekly-reviews/README.md)
+- [卡点](blockers.md)
+
+## 状态如何判断
+
+2026-10-12 核对了远程文件和 Issue，未在本次重新执行项目测试。已完成、指导下完成、尚未独立复做应分别记录。旧周报是历史快照，不覆盖最新证据；Issue 因延期关闭不等于完成。
