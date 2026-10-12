@@ -1,7 +1,9 @@
 # W6：写出并解释第一次训练
 
 日期：2026-10-11～10-17；更新：2026-10-12。依据 10/01 整合规划。
-入口：[训练总任务 #1](https://github.com/Zhihui-Cui/ai-infra-roadmap/issues/1)；目标仓库 llm-inference-lab（待创建）。
+入口：[训练总任务 #1](https://github.com/Zhihui-Cui/ai-infra-roadmap/issues/1)；目标仓库 [llm-inference-lab](https://github.com/Zhihui-Cui/llm-inference-lab)。
+
+直接开始：[主项目 W6 Issue #1](https://github.com/Zhihui-Cui/llm-inference-lab/issues/1)。
 
 ## 本周唯一主交付
 
