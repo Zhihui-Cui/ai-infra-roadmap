@@ -14,7 +14,7 @@
 |---|---|---|
 | [cpp-thread-pool](https://github.com/Zhihui-Cui/cpp-thread-pool) | C++ 并发基础 P0 | #8、#9 已关闭；已有有界队列和 Linux 串行基线记录。冻结功能，每周少量巩固 |
 | [concurrent-tcp-server](https://github.com/Zhihui-Cui/concurrent-tcp-server) | 6–10h 请求路径练习 P1 | 已有单连接、单请求 echo；#1 尚开，补测及耗时记录未齐。不是已实现并发服务 |
-| llm-inference-lab（待创建） | 持续主项目 P2 | 训练、Transformer、GPU 小实验、单卡推理评测与一个深度专题放同一仓库 |
+| [llm-inference-lab](https://github.com/Zhihui-Cui/llm-inference-lab) | 持续主项目 P2 | 训练、Transformer、GPU 小实验、单卡推理评测与一个深度专题放同一仓库 |
 | 本仓库 | 计划、状态、周复盘与跨项目入口 | 不放大模型权重，不堆放课程完整笔记 |
 
 暂不新建 Mini-vLLM、CUDA 大全集、量化论文或 FPGA 项目。未来出现独立使用者、独立发布需求和稳定边界时再拆仓。
