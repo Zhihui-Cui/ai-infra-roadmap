@@ -1,6 +1,6 @@
 # llm-inference-lab：一个持续主项目
 
-依据本人 2026-10-01 整合规划，2026-10-12 建立执行方案。远程仓库尚待创建；此文不是已完成项目的介绍。
+依据本人 2026-10-01 整合规划，2026-10-12 建立执行方案。[远程仓库](https://github.com/Zhihui-Cui/llm-inference-lab)已建立学习骨架；此文不是已完成项目的介绍。
 
 ## 为什么只新增一个仓库
 
@@ -49,6 +49,8 @@ llm-inference-lab/
 W23–W26 保留缓冲、面试和申请，不再开新框架。日期是目标，不自动转为完成状态。
 
 ## 当前只启用三项学习任务
+
+[W6 #1](https://github.com/Zhihui-Cui/llm-inference-lab/issues/1) · [W7 #2](https://github.com/Zhihui-Cui/llm-inference-lab/issues/2) · [W8 #3](https://github.com/Zhihui-Cui/llm-inference-lab/issues/3)
 
 ### W6：张量、autograd 与第一次训练
 - [ ] Python缺口只做定点补习；记录CPU环境和依赖。
