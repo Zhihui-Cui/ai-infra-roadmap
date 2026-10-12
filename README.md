@@ -14,13 +14,18 @@
 |---|---|---|
 | [cpp-thread-pool](https://github.com/Zhihui-Cui/cpp-thread-pool) | C++ 并发基础 P0 | #8、#9 已关闭；已有有界队列和 Linux 串行基线记录。冻结功能，每周少量巩固 |
 | [concurrent-tcp-server](https://github.com/Zhihui-Cui/concurrent-tcp-server) | 6–10h 请求路径练习 P1 | 已有单连接、单请求 echo；#1 尚开，补测及耗时记录未齐。不是已实现并发服务 |
-| [llm-inference-lab](https://github.com/Zhihui-Cui/llm-inference-lab) | 持续主项目 P2 | 训练、Transformer、GPU 小实验、单卡推理评测与一个深度专题放同一仓库 |
+| [llm-inference-lab](https://github.com/Zhihui-Cui/llm-inference-lab) | 持续主项目 P2 | 已初始化；本地开始纯 Python MSE 设计自测，尚无训练完成证据 |
 | 本仓库 | 计划、状态、周复盘与跨项目入口 | 不放大模型权重，不堆放课程完整笔记 |
 
 暂不新建 Mini-vLLM、CUDA 大全集、量化论文或 FPGA 项目。未来出现独立使用者、独立发布需求和稳定边界时再拆仓。
 
+## 最新复盘
+
+已补写 [W4](weekly-reviews/2026-10-03-W04.md)、[W5](weekly-reviews/2026-10-10-W05.md)，并记录 [W6截至10/12的快照](weekly-reviews/2026-10-12-W06-checkpoint.md)。复盘标注实际证据、提示程度和未记录时长，不把W6提前算作完成。
+
 ## 导航
 
+- [总控使用说明：什么需要更新、何时更新](HOW_TO_USE.md)
 - [阶段路线与门槛](roadmap.md)
 - [主项目结构、周计划及验收](plans/llm-inference-lab.md)
 - [TCP 限时练习](plans/concurrent-tcp-server.md)
@@ -29,4 +34,4 @@
 
 ## 状态如何判断
 
-2026-10-12 核对了远程文件和 Issue，未在本次重新执行项目测试。已完成、指导下完成、尚未独立复做应分别记录。旧周报是历史快照，不覆盖最新证据；Issue 因延期关闭不等于完成。
+2026-10-12 核对了远程文件、Issue及相关本地学习对话，未在本次重新执行项目测试。已完成、指导下完成、尚未独立复做应分别记录。旧周报是历史快照，不覆盖最新证据；Issue 因延期关闭不等于完成。
