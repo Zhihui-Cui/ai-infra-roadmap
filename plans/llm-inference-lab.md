@@ -1,6 +1,8 @@
 # llm-inference-lab：一个持续主项目
 
-依据本人 2026-10-01 整合规划，2026-10-12 建立执行方案。[远程仓库](https://github.com/Zhihui-Cui/llm-inference-lab)已建立学习骨架；此文不是已完成项目的介绍。
+依据本人 2026-10-01 整合规划，2026-10-12 建立执行方案。[远程仓库](https://github.com/Zhihui-Cui/llm-inference-lab)承接实现；此文是阶段目标，不是已完成项目的介绍。
+
+2026-10-19 状态：[W6 复盘](../weekly-reviews/2026-10-17-W06.md)与 [W7 快照](../weekly-reviews/2026-10-19-W07-checkpoint.md)已有训练运行证据，G1 独立验收仍未完成。以下清单保留完整验收要求，不因参考代码运行成功自动勾选。
 
 ## 为什么只新增一个仓库
 
