@@ -1,4 +1,9 @@
-# W6 阶段快照：TCP 复测与 Python 起步
+# W06 阶段记录：TCP 复测与 Python 起步
+
+- 学习周：W06（2026-10-11～2026-10-17）
+- 记录类型：阶段记录（checkpoint）
+- 截至日期：2026-10-12
+- 记录日期：2026-10-12
 
 学习周：2026-10-11～10-17；记录截至 10/12。本周未结束，本文件不是完成周报。10/17 周末复盘应另建文件或明确追加截止时间。
 依据远程仓库、本次对话及本地“Linux学习”“Python学习”相关消息；本次未重跑程序，也未成功核对本地 Git 工作区中的未提交代码。
@@ -11,7 +16,7 @@
 | read_line 函数练习 | 本地对话中本人贴出 7 个 PASS、Failed cases: 0 | 尚未出现在所查远程 main；不等于完整 TCP 集成测试 |
 | 独立测试设计 | 本人新增仅换行、上限1、发送端不关闭的正确用例 | 不等于测试辅助代码和完整函数都能独立写 |
 | Python MSE 自测 | 已讨论设计和五种输入预期，纠正异常与返回值概念 | 尚未见函数实现或运行结果，不能写为 Python 自测通过 |
-| llm-inference-lab | 已初始化说明、模板、忽略规则和 W6–W8 Issues | 尚无已提交的训练实现、训练结果或性能数据 |
+| llm-inference-lab | 已初始化说明、模板、忽略规则和 W06–W08 Issues | 尚无已提交的训练实现、训练结果或性能数据 |
 
 ## TCP：已有成果与限制
 
@@ -52,5 +57,5 @@ normal、incomplete、exact limit、missing newline at limit、first line、over
 
 - [TCP 固定版本](https://github.com/Zhihui-Cui/concurrent-tcp-server/tree/69e8afb51ea0b868a1a0ec456ce974398ab399c9)
 - [主项目初始化版本](https://github.com/Zhihui-Cui/llm-inference-lab/tree/62cb54db005a39c608e0144a2bd8d952893f8037)
-- [W6 学习任务](https://github.com/Zhihui-Cui/llm-inference-lab/issues/1)
+- [W06 学习任务](https://github.com/Zhihui-Cui/llm-inference-lab/issues/1)
 - 本地“Linux学习”10/12延续对话中的七案例原始输出，以及“Python学习”10/12设计问答。未公开上传私人对话全文。

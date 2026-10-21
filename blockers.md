@@ -1,6 +1,6 @@
 # 卡点与可复用教训
 
-截至 2026-10-21，依据本人运行记录、当前源码和子仓库证据整理。参考/审查辅助完成与独立复做分开记录，见 [W6 复盘](weekly-reviews/2026-10-17-W06.md)和 [W7 快照](weekly-reviews/2026-10-19-W07-checkpoint.md)。
+截至 2026-10-21，依据本人运行记录、当前源码和子仓库证据整理。参考/审查辅助完成与独立复做分开记录，见 [W06 复盘](weekly-reviews/2026-10-17-W06-review.md)和 [W07 快照](weekly-reviews/2026-10-19-W07-checkpoint.md)。
 
 ## 已纠正：Python MSE 返回值与 Tensor 形状
 

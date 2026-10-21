@@ -1,6 +1,6 @@
 # AI Systems 学习总控
 
-执行更新：2026-10-21。W1 从 2026-09-06 起算，当前 W7（10/18–10/24），按周日到周六统计。
+执行更新：2026-10-21。W01 从 2026-09-06 起算，当前 W07（10/18–10/24），按周日到周六统计。
 
 主线：独立训练 → 模型机制 → 可靠单卡评测 → 一个有证据的深入问题。此处发布技术执行摘要，代码与实验输出放对应项目。
 
@@ -21,17 +21,19 @@
 
 不新增 Mini-vLLM、CUDA 大全集、量化论文或 FPGA 项目。模型学习优先，系统扩展不足时续到巩固时段。
 
-## 最新复盘
+## 最新学习记录
 
-- [W7：截至 10/21 的跨项目进展](weekly-reviews/2026-10-21-W07-checkpoint.md)
+| 截至日期 | 学习周 | 类型 | 文档 |
+|---|---|---|---|
+| 2026-10-21 | W07 | 阶段记录 | [训练可靠性与二分类](weekly-reviews/2026-10-21-W07-checkpoint.md) |
+| 2026-10-19 | W07 | 阶段记录 | [数据划分与完整训练流程](weekly-reviews/2026-10-19-W07-checkpoint.md) |
+| 2026-10-17 | W06 | 周复盘 | [Python/PyTorch 与最小训练](weekly-reviews/2026-10-17-W06-review.md) |
+| 2026-10-12 | W06 | 阶段记录 | [TCP 复测与 Python 起步](weekly-reviews/2026-10-12-W06-checkpoint.md) |
 
-- [W6：10/11–10/17 周总结](weekly-reviews/2026-10-17-W06.md)
-- [W7：截至 10/19 的快照](weekly-reviews/2026-10-19-W07-checkpoint.md)
-- [W6 截至 10/12 的历史快照](weekly-reviews/2026-10-12-W06-checkpoint.md)
-- [W4](weekly-reviews/2026-10-03-W04.md) · [W5](weekly-reviews/2026-10-10-W05.md)
+[全部学习记录](weekly-reviews/README.md) · [记录模板](weekly-reviews/TEMPLATE.md) · [命名与记录规范](docs/documentation-conventions.md)
 
 ## 导航与证据口径
 
-[使用说明](HOW_TO_USE.md) · [阶段路线与门槛](roadmap.md) · [主项目计划](plans/llm-inference-lab.md) · [TCP 限时练习](plans/concurrent-tcp-server.md) · [全部周报](weekly-reviews/README.md) · [卡点](blockers.md)。
+[使用说明](HOW_TO_USE.md) · [阶段路线与门槛](roadmap.md) · [主项目计划](plans/llm-inference-lab.md) · [TCP 限时练习](plans/concurrent-tcp-server.md) · [全部学习记录](weekly-reviews/README.md) · [卡点](blockers.md)。
 
-本次核对远程记录、本人贴出的运行结果与本地源码，并在隔离副本核验代表性脚本。详细新日志只放主项目。成功运行、指导下完成与独立复做分别记账；未记录工时写未知；旧快照保留原貌，不倒填当时尚未完成的内容。
+本次核对远程记录、本人贴出的运行结果与本地源码，并在隔离副本核验代表性脚本。详细新日志只放主项目。成功运行、指导下完成与独立复做分别记账；未记录工时写未知；历史记录保留当时结论与证据，不倒填当时尚未完成的内容。

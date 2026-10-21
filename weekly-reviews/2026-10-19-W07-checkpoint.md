@@ -1,4 +1,9 @@
-# W7 截至 2026-10-19：完整流程已经跑通，独立验收继续
+# W07 阶段记录：数据划分与完整训练流程
+
+- 学习周：W07（2026-10-18～2026-10-24）
+- 记录类型：阶段记录（checkpoint）
+- 截至日期：2026-10-19
+- 记录日期：2026-10-19
 
 周期：10/18–10/24；本页只记录 18–19 日，不是结周报告。
 
@@ -20,10 +25,10 @@ DataLoader、MLP、训练/验证、保存加载，区分小样本拟合与泛化
 
 ## 5. 证据
 
-- [主项目 W7 详细快照](https://github.com/Zhihui-Cui/llm-inference-lab/blob/main/reports/2026-10-19-W07-checkpoint.md)。
+- [主项目 W07 详细快照](https://github.com/Zhihui-Cui/llm-inference-lab/blob/main/reports/2026-10-19-W07-checkpoint.md)。
 - 10/18 含噪声实验：最佳第 8 轮、停止第 28 轮；验证 MSE≈0.055139，测试 MSE≈0.032546；w≈-1.9947、b≈2.9883。未固定种子。
 - 10/19 本人综合运行：2,000 次更新，w=1.5、b=-0.7，验证 MSE=6.785683e-14，测试 MSE=1.298517e-13，最大绝对误差=4.768372e-7；保存/加载一致。
-- [归档时新核验](https://github.com/Zhihui-Cui/llm-inference-lab/blob/main/reports/2026-10-19-verification.md)：19 文件语法检查、6 脚本实际运行，由 Codex 执行，不算本人独立验收。
+- [归档时新核验](https://github.com/Zhihui-Cui/llm-inference-lab/blob/main/reports/2026-10-19-W07-verification.md)：19 文件语法检查、6 脚本实际运行，由 Codex 执行，不算本人独立验收。
 - 系统项目、算法本次无新证据，不更改原验收结论。
 
 ## 6. 本周余下目标

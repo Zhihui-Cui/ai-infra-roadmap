@@ -1,15 +1,23 @@
-# W7 截至 2026-10-21：训练可靠性与二分类
+# W07 阶段记录：训练可靠性与二分类
+
+- 学习周：W07（2026-10-18～2026-10-24）
+- 记录类型：阶段记录（checkpoint）
+- 截至日期：2026-10-21
+- 记录日期：2026-10-21
+
 周区间：10/18–10/24；本记录为周中快照，承接 [10/19 快照](2026-10-19-W07-checkpoint.md)，不回写旧周报。
 
 ## 本次交付
+
 | 仓库/方向 | 进度 | 证据与边界 |
 |---|---|---|
 | llm-inference-lab | 两次故障闭环、标准化、二分类五模块完成指导下练习；参数与阈值独立加载成功 | [详细报告与源码](https://github.com/Zhihui-Cui/llm-inference-lab/blob/main/reports/2026-10-21-W07-checkpoint.md)，五脚本在隔离副本核验；G1 独立综合验收仍待完成 |
-| concurrent-tcp-server | 本人报告当天普通/分段请求复测已完成 | [本次状态](https://github.com/Zhihui-Cui/concurrent-tcp-server/blob/main/docs/progress-2026-10-21.md)，未附此次新日志，不等同 #1 全部验收或并发实现 |
-| cpp-thread-pool | 保持 P0 已验收基础及已有有界队列/粒度实验，冻结功能 | [状态核对](https://github.com/Zhihui-Cui/cpp-thread-pool/blob/main/docs/progress-2026-10-21.md)，本轮没有新线程池运行或性能测量 |
+| concurrent-tcp-server | 本人报告当天普通/分段请求复测已完成 | [本次状态](https://github.com/Zhihui-Cui/concurrent-tcp-server/blob/main/docs/2026-10-21-W07-checkpoint.md)，未附此次新日志，不等同 #1 全部验收或并发实现 |
+| cpp-thread-pool | 保持 P0 已验收基础及已有有界队列/粒度实验，冻结功能 | [状态核对](https://github.com/Zhihui-Cui/cpp-thread-pool/blob/main/docs/2026-10-21-W07-checkpoint.md)，本轮没有新线程池运行或性能测量 |
 | 算法 | 本人报告两数之和可以完成 | 未提供本次代码/输出；不虚构测试通过数或复杂度验收 |
 
 ## 学习结果
+
 - 有梯度不等于参数更新；删除 step 的人工故障恢复后收敛。广播错误 MSE 从 1.33333337 修复为 0。
 - 标准化仅拟合训练集，保存均值/标准差；测试 MSE=4.501288e-13，重载一致。
 - 二分类区分 logits/概率/类别，BCEWithLogitsLoss 使用原始分数。阈值 0.5 时正确手算 Precision=50%、Recall=100%。
@@ -18,8 +26,10 @@
 - 五点 MLP 小样本拟合和 21 点实验早已有证据，今天复用，不重复训练充数。
 
 ## 完成程度与下一步
+
 本人运行、回答概念问题并提出阈值与模型关系的问题；AI 提供解释、审查和完整示例，故不把整个训练阶段判作已无参考独立通过。语法允许查，打印可委托。
 二分类入门本轮收尾；后续类别不平衡、Precision/Recall 代码、零分母处理、多分类尚未完成。月底一次综合变体验收与配置/划分追溯仍待补，attention/GPU/真实推理未开始。没有强制重做已熟悉的整个训练循环。
 
 ## 预算与计划修订
+
 每日上限：一/二/四/五各3h，三/六/日各6h，共30h；实际工时未知。新进度优先于旧逐日计划中的重复任务，标准化原拟后续学习已提前完成，二分类为本人主动要求的超前内容。日任务有上限，完成即停；未完成依赖替换后续任务，不无限加量。
